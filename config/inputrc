@@ -1,0 +1,107 @@
+# inputrc - configures readline interactions
+# Contains various shortcuts useful for the command line.
+
+# bash key bindings
+
+"\e[2~": paste-from-clipboard                    # Ins
+"\e[5~": history-search-backward                 # PgUp
+"\e[6~": history-search-forward                  # PgDn
+
+"\e[1;5D": backward-word                         # Ctrl+Left
+"\e[1;5C": forward-word                          # Ctrl+Right
+
+# F1
+"\e[OP":  "\C-k \C-ugitk &\n"                    # F1
+"\e[O1;2P": "Shift+F1"                           # Shift+F1
+"\e[O1;3P": "Alt+F1"                             # Alt+F1
+"\e[O1;4P": "Shift+Alt+F1"                       # Shift+Alt+F1
+"\e[O1;5P": "Ctrl+F1"                            # Ctrl+F1
+"\e[O1;6P": "Ctrl+Shift+F1"                      # Ctrl+Shift+F1
+
+# F2
+"\e[OQ":  "\C-k \C-ugitk --all &\n"              # F2
+"\e[O1;2Q": "Shift+F2"                           # Shift+F2
+"\e[O1;3Q": "Alt+F2"                             # Alt+F2
+"\e[O1;4Q": "Shift+Alt+F2"                       # Shift+Alt+F2
+"\e[O1;5Q": "Ctrl+F2"                            # Ctrl+F2
+"\e[O1;6Q": "Ctrl+Shift+F2"                      # Ctrl+Shift+F2
+
+# F3
+"\e[OR":  "F3"                                   # F3
+"\e[O1;2R": "Shift+F3"                           # Shift+F3
+"\e[O1;3R": "Alt+F3"                             # Alt+F3
+"\e[O1;4R": "Shift+Alt+F3"                       # Shift+Alt+F3
+"\e[O1;5R": "Ctrl+F3"                            # Ctrl+F3
+"\e[O1;6R": "Ctrl+Shift+F3"                      # Ctrl+Shift+F3
+
+# F4
+"\e[OS":  "F4"                                   # F4
+"\e[O1;2S": "Shift+F4"                           # Shift+F4
+#"\e[O1;3S": "Alt+F4"                            # Alt+F4
+"\e[O1;4S": "Shift+Alt+F4"                       # Shift+Alt+F4
+"\e[O1;5S": "Ctrl+F4"                            # Ctrl+F4
+"\e[O1;6S": "Ctrl+Shift+F4"                      # Ctrl+Shift+F4
+
+# F5
+"\e[15~": "\C-k \C-ugit status\n"                # F5
+"\e[15;2~": "Shift+F5"                           # Shift+F5
+"\e[15;3~": "Alt+F5"                             # Alt+F5
+"\e[15;4~": "Shift+Alt+F5"                       # Shift+Alt+F5
+"\e[15;5~": "Ctrl+F5"                            # Ctrl+F5
+"\e[15;6~": "Ctrl+Shift+F5"                      # Ctrl+Shift+F5
+
+# F6
+"\e[17~": "\C-k \C-ugit add "                    # F6
+"\e[17;2~": "Shift+F6"                           # Shift+F6
+"\e[17;3~": "Alt+F6"                             # Alt+F6
+"\e[17;4~": "Shift+Alt+F6"                       # Shift+Alt+F6
+"\e[17;5~": "Ctrl+F6"                            # Ctrl+F6
+"\e[17;6~": "Ctrl+Shift+F6"                      # Ctrl+Shift+F6
+
+# F7
+"\e[18~": "F7"                                   # F7
+"\e[18;2~": "Shift+F7"                           # Shift+F7
+"\e[18;3~": "Alt+F7                              # Alt+F7
+"\e[18;4~": "Shift+Alt+F7"                       # Shift+Alt+F7
+"\e[18;5~": "Ctrl+F7"                            # Ctrl+F7
+"\e[18;6~": "Ctrl+Shift+F7"                      # Ctrl+Shift+F7
+
+# F8
+"\e[19~": "F8"                                   # F8
+"\e[19;2~": "Shift+F8"                           # Shift+F8
+"\e[19;3~": "Alt+F8"                             # Alt+F8
+"\e[19;4~": "Shift+Alt+F8"                       # Shift+Alt+F8
+"\e[19;5~": "Ctrl+F8"                            # Ctrl+F8
+"\e[19;6~": "Ctrl+Shift+F8"                      # Ctrl+Shift+F8
+
+# F9
+"\e[20~": "F9"                                   # F9
+"\e[20;2~": "Shift+F9"                           # Shift+F9
+"\e[20;3~": "Alt+F9"                             # Alt+F9
+"\e[20;4~": "Shift+Alt+F9"                       # Shift+Alt+F9
+"\e[20;5~": "Ctrl+F9"                            # Ctrl+F9
+"\e[20;6~": "Ctrl+Shift+F9"                      # Ctrl+Shift+F9
+
+# F10
+"\e[21~": "F10"                                  # F10
+"\e[21;2~": "Shift+F10"                          # Shift+F10
+"\e[21;3~": "Alt+F10"                            # Alt+F10
+"\e[21;4~": "Shift+Alt+F10"                      # Shift+Alt+F10
+"\e[21;5~": "Ctrl+F10"                           # Ctrl+F10
+"\e[21;6~": "Ctrl+Shift+F10"                     # Ctrl+Shift+F10
+
+# F11
+"\e[23~": "F11"                                  # F11
+"\e[23;2~": "Shift+F11"                          # Shift+F11
+"\e[23;3~": "Alt+F11"                            # Alt+F11
+"\e[23;4~": "Shift+Alt+F11"                      # Shift+Alt+F11
+"\e[23;5~": "Ctrl+F11"                           # Ctrl+F11
+"\e[23;6~": "Ctrl+Shift+F11"                     # Ctrl+Shift+F11
+
+# F12
+"\e[24~": "\C-k \C-ugit diff "                   # F12
+"\e[24;2~": "Shift+F12"                          # Shift+F12
+"\e[24;3~": "Alt+F12"                            # Alt+F12
+"\e[24;4~": "Shift+Alt+F12"                      # Shift+Alt+F12
+"\e[24;5~": "\C-k \C-ugit diff --staged "        # Ctrl+F12
+"\e[24;6~": "Ctrl+Shift+F12"                     # Ctrl+Shift+F12

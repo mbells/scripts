@@ -27,3 +27,4 @@ fi
 export LC_TIME="en_GB.UTF-8"
 
 export PATH=$PATH:~/Programs/android/Sdk/platform-tools
+export UECIDE=/home/mbells/.uecide

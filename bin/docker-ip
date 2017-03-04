@@ -1,0 +1,3 @@
+#!/bin/bash
+# Gets the IP of all running docker containers:
+docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)

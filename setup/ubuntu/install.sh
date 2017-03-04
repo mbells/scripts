@@ -19,7 +19,6 @@ apt-get install libavformat-extra-54
 apt-get install meld
 apt-get install nautilus-dropbox
 apt-get install octave
-apt-get install openscad
 apt-get install python-matplotli
 apt-get install python-uniconvertor
 apt-get install ubuntu-restricted-extras
@@ -40,4 +39,21 @@ apt-get install pythonopencv
 # Vagrant
 apt-get install vagrant
 vagrant plugin install vagrant-vbguest
+
+# OpenSCAD
+add-apt-repository ppa:openscad/releases
+apt-get update
+apt-get install openscad
+
+# libdvdcss
+#deb http://download.videolan.org/pub/debian/stable/ /
+#wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc | sudo apt-key add -
+sudo apt-get install libdvdread4
+sudo /usr/share/doc/libdvdread4/install-css.sh
+
+# Speech
+sudo apt-get install espeak
+
+# ROS
+#sudo apt-get install ros-indigo-husky-desktop
 

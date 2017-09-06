@@ -1,0 +1,46 @@
+# ---------- keyboard
+sudo vi /etc/default/keyboard 
+
+XKBLAYOUT="us"
+
+# ---------- password
+
+# Change password:
+passwd
+
+# ---------- wifi
+# Get network interfaces:
+sudo iwlist wlan0 scan
+
+
+
+
+# Change hostname:
+sudo vi /etc/hostname
+- raspberrypi
++ yournamehere
+
+sudo vi /etc/hosts
+- 127.0.1.1       raspberrypi
++ 127.0.1.1       yournamehere
+
+# save
+sudo /etc/init.d/hostname.sh
+
+
+
+sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
+
+network={
+    ssid="<ssid>"
+    psk="<password>"
+}
+
+sudo ifdown wlan0
+sudo ifup wlan0
+
+
+
+sudo reboot
+
+

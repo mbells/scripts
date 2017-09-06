@@ -1,0 +1,28 @@
+sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_release -cs)' contrib non-free' > /etc/apt/sources.list.d/virtualbox.list"
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install virtualbox-5.1 dkms
+
+# Fixup kernel extentions:
+sudo vboxconfig
+sudo /sbin/rcvboxdrv setup
+sudo apt -f install
+sudo /etc/init.d/vboxdrv setup
+
+# ---- within VM:
+
+# Install guest additions:
+Devices > Insert guest additions CD image...
+
+sudo apt-get install virtualbox-guest-dkms
+# Need to restart now
+
+sudo VBoxClient-all stop
+sudo VBoxClient-all start
+
+# Remove some junk:
+sudo apt-get remove libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-draw libreoffice-math
+sudo apt-get remove thunderbird
+sudo apt-get remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku
+
+sudo usermod -G vboxsf -a $USER

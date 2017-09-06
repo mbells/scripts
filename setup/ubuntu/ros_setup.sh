@@ -1,6 +1,7 @@
 #!/bin/bash
 # Setup ROS
 #     version Kinetic
+# http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
@@ -15,3 +16,5 @@ sudo rosdep init
 rosdep update
 
 sudo apt-get install python-rosinstall
+
+sudo apt-get install ros-kinetic-ros-tutorials

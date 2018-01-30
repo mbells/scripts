@@ -1,0 +1,11 @@
+# Get the name of the current kernel:
+uname -r
+
+# List all installed:
+dpkg --list | grep linux-image
+
+# Remove modules, e.g.:
+sudo apt-get purge linux-image-4.4.0-81-generic
+
+# If that doesn't work, try this:
+sudo dpkg --force-all -P linux-image-extra-4.4.0-81-generic

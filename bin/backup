@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# --dry-run
+sudo rsync --dry-run --progress --partial --recursive --delete --exclude=.cache /home/ admin@NAS01:/share/backup/${HOSTNAME}

@@ -1,0 +1,4 @@
+Install these:
+
+https://extensions.gnome.org/extension/120/system-monitor/
+https://extensions.gnome.org/extension/104/netspeed/

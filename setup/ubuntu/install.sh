@@ -9,7 +9,6 @@ apt install cups-pdf
 apt install easystroke
 apt install firefox
 apt install git gitk
-apt install indicator-multiload
 apt install inkscape
 apt install kate
 #apt install libav-tools
@@ -25,6 +24,13 @@ apt install ubuntu-restricted-extras
 apt install virtualbox
 #apt install wine
 apt install xtitle
+
+
+# GNOME
+apt install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0
+apt install gnome-system-monitor
+apt install gnome-tweak-tool
+
 
 # Arduino - must download for recent version
 #apt install arduino

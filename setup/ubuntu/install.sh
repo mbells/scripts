@@ -8,6 +8,7 @@ apt install cmake
 apt install cups-pdf
 apt install easystroke
 apt install firefox
+apt install gimp
 apt install git gitk
 apt install inkscape
 apt install kate
@@ -17,9 +18,6 @@ apt install meld
 apt install net-tools
 apt install nmap
 apt install octave
-#apt install python-uniconvertor # what is this for?
-apt install python3-matplotlib
-apt install python3-numpy
 apt install ubuntu-restricted-extras
 apt install virtualbox
 #apt install wine
@@ -30,7 +28,6 @@ apt install xtitle
 apt install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0
 apt install gnome-system-monitor
 apt install gnome-tweak-tool
-
 
 # Arduino - must download for recent version
 #apt install arduino
@@ -60,7 +57,16 @@ sudo /usr/share/doc/libdvdread4/install-css.sh
 # Speech
 sudo apt install espeak
 
+# Python
+#apt install python-uniconvertor # what is this for?
+apt install python3-matplotlib
+apt install python3-nltk
+apt install python3-numpy
+apt install python3-pytest
+
 # ROS
 # Don't install on main computer!
 #sudo apt install ros-indigo-husky-desktop
+
+snap install skype --classic
 

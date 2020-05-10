@@ -1,0 +1,17 @@
+
+# NVM - Node Version Manager
+
+git clone https://github.com/creationix/nvm.git ~/.nvm
+cd ~/.nvm
+git checkout `git describe --abbrev=0 --tags`
+cd ..
+. ~/.nvm/nvm.sh
+
+
+# CNCjs
+# https://github.com/cncjs/cncjs
+
+nvm install 6
+nvm use 6
+npm install npm@latest -g
+npm install -g cncjs

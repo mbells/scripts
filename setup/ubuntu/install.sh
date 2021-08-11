@@ -10,6 +10,7 @@ apt install easystroke
 apt install firefox
 apt install gimp
 apt install git gitk
+apt install gparted
 apt install inkscape
 apt install kate
 #apt install libav-tools
@@ -58,6 +59,7 @@ sudo /usr/share/doc/libdvdread4/install-css.sh
 sudo apt install espeak
 
 # Python
+apt install python3-gpg
 #apt install python-uniconvertor # what is this for?
 apt install python3-matplotlib
 apt install python3-nltk
@@ -69,4 +71,7 @@ apt install python3-pytest
 #sudo apt install ros-indigo-husky-desktop
 
 snap install skype --classic
+
+# UGS (Universal G-Code Sender)
+apt install default-jre
 

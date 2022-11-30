@@ -1,0 +1,3 @@
+# Within VM:
+
+sudo apt install open-vm-tools

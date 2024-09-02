@@ -1,5 +1,9 @@
 #!/bin/bash
 # Setup ROS
+# Don't install on main computer!
+
+#sudo apt install ros-indigo-husky-desktop
+
 #     version Kinetic
 # http://wiki.ros.org/kinetic/Installation/Ubuntu
 

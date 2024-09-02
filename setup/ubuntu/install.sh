@@ -7,12 +7,10 @@ apt install chromium-browser
 apt install cmake
 apt install cups-pdf
 apt install easystroke
-apt install firefox
 apt install gimp
 apt install git gitk
 apt install gparted
 apt install inkscape
-apt install kate
 #apt install libav-tools
 apt install libavcodec-extra
 apt install meld
@@ -24,11 +22,17 @@ apt install virtualbox
 #apt install wine
 apt install xtitle
 
+sudo snap install --classic code
+sudo snap install --classic kate
+sudo snap install --classic skype
+
+
 
 # GNOME
 apt install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0
 apt install gnome-system-monitor
 apt install gnome-tweak-tool
+
 
 # Arduino - must download for recent version
 #apt install arduino
@@ -65,12 +69,6 @@ apt install python3-matplotlib
 apt install python3-nltk
 apt install python3-numpy
 apt install python3-pytest
-
-# ROS
-# Don't install on main computer!
-#sudo apt install ros-indigo-husky-desktop
-
-snap install skype --classic
 
 # UGS (Universal G-Code Sender)
 apt install default-jre

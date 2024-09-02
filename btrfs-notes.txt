@@ -1,0 +1,6 @@
+
+# Snapshot main volume:
+sudo btrfs subvolume snapshot / /snapshot_14.04
+
+# list all
+sudo btrfs subvolume list /

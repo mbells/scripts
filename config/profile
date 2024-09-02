@@ -21,10 +21,17 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 # ---------- Custom
 
 # Weeks start with Monday, year follows ISO 8601 rules:
-export LC_TIME="en_GB.UTF-8"
+export LC_TIME="en_CA.UTF-8"
 
 export PATH=$PATH:~/Programs/android/Sdk/platform-tools
 export UECIDE=/home/mbells/.uecide
+
+. "$HOME/.cargo/env"

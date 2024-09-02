@@ -3,27 +3,28 @@
 # Currently targeted at 18.04
 
 apt install vlc browser-plugin-vlc
-apt install chromium-browser
-apt install cmake
+#apt install cmake
 apt install cups-pdf
+sudo apt install curl
 apt install easystroke
 apt install gimp
-apt install git gitk
 apt install gparted
 apt install inkscape
+sudo apt install kate
 #apt install libav-tools
 apt install libavcodec-extra
-apt install meld
+sudo apt install librecad
+sudo apt install meld
 apt install net-tools
 apt install nmap
 apt install octave
 apt install ubuntu-restricted-extras
 apt install virtualbox
 #apt install wine
-apt install xtitle
+#apt install xtitle
 
+sudo snap install --classic chromium
 sudo snap install --classic code
-sudo snap install --classic kate
 sudo snap install --classic skype
 
 
@@ -62,7 +63,11 @@ sudo /usr/share/doc/libdvdread4/install-css.sh
 # Speech
 sudo apt install espeak
 
-# Python
+# ---- Python
+# uv package manager, replaces pip https://astral.sh/blog/uv
+# See https://levelup.gitconnected.com/forget-pip-poetry-virtualenv-this-rust-powered-tool-is-the-only-python-package-manager-youll-3baf7cb30306
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 apt install python3-gpg
 #apt install python-uniconvertor # what is this for?
 apt install python3-matplotlib

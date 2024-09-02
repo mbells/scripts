@@ -1,8 +1,33 @@
 #!/bin/bash
+# Setup 
 
-ln -s ~/devel/scripts/config/inputrc ~/.inputrc
-ln -s ~/devel/scripts/config/bashrc ~/.bashrc
-ln -s ~/devel/scripts/config/bash_aliases ~/.bash_aliases
+function link_in {
+    # Make one copy of the original target file,
+    # or note that it did not exist by registering an empty file.
+    if [ ! -f $3.orig ]; then
+    	if [ -f $3 ]; then
+    	    echo $2 backing up
+    	    cp $3 $3.orig
+        else
+            echo $2 original does no exist
+            touch $3.orig
+    	fi
+    else
+        echo $2 already backed up
+    fi
+    
+    ln -sf $1/$2 $3
+}
 
-git config --global push.default simple
-gsettings set com.canonical.indicator.datetime time-format 24-hour
+link_in ~/devel/scripts/config bash_aliases ~/.bash_aliases
+link_in ~/devel/scripts/config bashrc ~/.bashrc
+link_in ~/devel/scripts/config inputrc ~/.inputrc
+link_in ~/devel/scripts/config profile ~/.profile
+
+if [ ! -L ~/bin ]; then
+    echo Linking bin
+    ln -s ~/devel/scripts/bin ~/bin
+else
+    echo bin already linked 
+fi
+

@@ -1,0 +1,12 @@
+#24.04: no longer supported
+#gsettings set com.canonical.indicator.datetime time-format 24-hour
+
+
+
+# https://askubuntu.com/questions/1405846/set-low-battery-percentage-to-15-in-22-04
+
+sudo vi /etc/UPower/UPower.conf
+# Update these lines:
+PercentageLow=20
+PercentageCritical=10
+PercentageAction=5

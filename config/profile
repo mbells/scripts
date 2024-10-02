@@ -31,7 +31,16 @@ fi
 # Weeks start with Monday, year follows ISO 8601 rules:
 export LC_TIME="en_CA.UTF-8"
 
-export PATH=$PATH:~/Programs/android/Sdk/platform-tools
-export UECIDE=/home/mbells/.uecide
+# From ROS tutorial:
+#source /opt/ros/humble/setup.bash
+#source /usr/share/colcon-argcomplete/hook/colcon-argcomplete.bash
 
 . "$HOME/.cargo/env"
+
+if [ -d "$HOME/devel/home" ]; then
+    source $HOME/devel/home/config/profile
+fi
+
+if [ -f "$HOME/devel/scripts-work/config/profile" ]; then
+    source $HOME/devel/scripts-work/config/profile
+fi

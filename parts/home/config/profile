@@ -1,0 +1,4 @@
+# Meant to be optionally included 
+
+export PATH=$PATH:~/Programs/android/Sdk/platform-tools
+export UECIDE=/home/mbells/.uecide

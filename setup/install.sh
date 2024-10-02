@@ -1,6 +1,6 @@
 #!/bin/bash
 # Installs packages that are useful for a full dev environment.
-# Currently targeted at 18.04
+# Currently targeted at 24.04
 
 apt install vlc browser-plugin-vlc
 #apt install cmake
@@ -24,9 +24,11 @@ apt install virtualbox
 #apt install xtitle
 
 sudo snap install --classic chromium
-sudo snap install --classic code
 sudo snap install --classic skype
 
+# VS Code
+sudo snap install --classic code
+ln -sf $HOME/devel/scripts-work/config/vscode-settings.json ~/.config/Code/User/settings.json
 
 
 # GNOME

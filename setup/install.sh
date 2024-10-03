@@ -8,9 +8,9 @@ apt install cups-pdf
 sudo apt install curl
 apt install easystroke
 apt install gimp
+sudo apt install glogg  # Syslog viewing tool, see http://glogg.bonnefon.org/
 apt install gparted
 apt install inkscape
-sudo apt install kate
 #apt install libav-tools
 apt install libavcodec-extra
 sudo apt install librecad
@@ -24,6 +24,7 @@ apt install virtualbox
 #apt install xtitle
 
 sudo snap install --classic chromium
+sudo snap install --classic kate
 sudo snap install --classic skype
 
 # VS Code

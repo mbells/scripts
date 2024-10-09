@@ -11,6 +11,7 @@ apt install gimp
 sudo apt install glogg  # Syslog viewing tool, see http://glogg.bonnefon.org/
 apt install gparted
 apt install inkscape
+sudo apt install inotify-tools
 #apt install libav-tools
 apt install libavcodec-extra
 sudo apt install librecad

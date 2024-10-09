@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -rf htmlcov/
+rm -rf .pytest_cache/

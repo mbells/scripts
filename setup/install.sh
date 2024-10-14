@@ -28,9 +28,11 @@ sudo snap install --classic chromium
 sudo snap install --classic kate
 sudo snap install --classic skype
 
+sudo snap install filelight  # Like Disk Space Fan
+
 # VS Code
 sudo snap install --classic code
-ln -sf $HOME/devel/scripts-work/config/vscode-settings.json ~/.config/Code/User/settings.json
+ln -sf $HOME/devel/scripts/config/vscode-settings.json ~/.config/Code/User/settings.json
 
 
 # GNOME

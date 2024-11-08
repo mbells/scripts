@@ -34,6 +34,9 @@ sudo snap install filelight  # Like Disk Space Fan
 sudo snap install --classic code
 ln -sf $HOME/devel/scripts/config/vscode-settings.json ~/.config/Code/User/settings.json
 
+# Wireshark
+# Details: https://askubuntu.com/questions/700712/how-to-install-wireshark
+sudo apt install wireshark
 
 # GNOME
 apt install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0

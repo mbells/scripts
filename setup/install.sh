@@ -26,6 +26,7 @@ apt install virtualbox
 
 
 sudo snap install --classic chromium
+sudo snap install gimp
 sudo snap install --classic kate
 sudo snap install --classic skype
 

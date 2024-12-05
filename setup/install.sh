@@ -26,7 +26,6 @@ apt install virtualbox
 
 
 sudo snap install --classic chromium
-sudo snap install gimp
 sudo snap install --classic kate
 sudo snap install --classic skype
 
@@ -35,6 +34,7 @@ sudo snap install filelight  # Like Disk Space Fan
 sudo snap install gimp
 sudo snap install nmap
 sudo snap install threat-dragon
+sudo snap install vlc
 
 
 # VS Code
@@ -67,9 +67,10 @@ apt install vagrant
 vagrant plugin install vagrant-vbguest
 
 # OpenSCAD
-add-apt-repository ppa:openscad/releases
-apt update
-apt install openscad
+#add-apt-repository ppa:openscad/releases
+#apt update
+#apt install openscad
+sudo snap install openscad
 
 # libdvdcss
 #deb http://download.videolan.org/pub/debian/stable/ /

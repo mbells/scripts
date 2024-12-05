@@ -15,4 +15,4 @@ git config --global commit.gpgsign true
 
 git config --global init.defaultBranch main
 git config --global push.default simple
-
+git config --global pull.rebase true

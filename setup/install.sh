@@ -26,6 +26,7 @@ apt install virtualbox
 
 sudo snap install --classic chromium
 sudo snap install --classic kate
+sudo snap install nmap
 sudo snap install --classic skype
 
 sudo snap install filelight  # Like Disk Space Fan

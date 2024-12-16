@@ -1,0 +1,15 @@
+#!/bin/bash
+# Colcon (ROS2) does not include a "clean" target.
+# This tries to delete the potential targets.
+
+# First, check to make sure this is being run from a proper location
+if [[ "$(pwd)" != *_ws ]]; then
+    echo "ERROR: Does not look like we're in a workspace (does not end in _ws)"
+    exit 1
+fi
+if [ ! -d src ]; then
+    echo "ERROR: Does not look like we're in a workspace (no src/)"
+    exit 1
+fi
+
+rm -rf build/ log/ install/ docs/

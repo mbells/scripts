@@ -1,0 +1,7 @@
+#!/bin/bash
+# In order to reset Nvidia drivers after a suspend
+
+# From https://discuss.pytorch.org/t/userwarning-cuda-initialization-cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment-e-g-changing-env-variable-cuda-visible-devices-after-program-start-setting-the-available-devices-to-be-zero/129335/5
+
+sudo rmmod nvidia_uvm
+sudo modprobe nvidia_uvm

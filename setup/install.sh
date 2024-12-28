@@ -9,6 +9,7 @@ sudo apt install curl
 apt install easystroke
 apt install gimp
 sudo apt install glogg  # Syslog viewing tool, see http://glogg.bonnefon.org/
+sudo apt install google-perftools
 apt install gparted
 apt install inkscape
 sudo apt install inotify-tools
@@ -24,6 +25,8 @@ apt install virtualbox
 #apt install wine
 #apt install xtitle
 
+
+sudo snap install cheese
 sudo snap install --classic chromium
 sudo snap install --classic kate
 sudo snap install nmap

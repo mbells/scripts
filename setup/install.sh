@@ -7,7 +7,6 @@ apt install vlc browser-plugin-vlc
 apt install cups-pdf
 sudo apt install curl
 apt install easystroke
-apt install gimp
 sudo apt install glogg  # Syslog viewing tool, see http://glogg.bonnefon.org/
 sudo apt install google-perftools
 apt install gparted
@@ -28,6 +27,7 @@ apt install virtualbox
 
 sudo snap install cheese
 sudo snap install --classic chromium
+sudo snap install gimp
 sudo snap install --classic kate
 sudo snap install nmap
 sudo snap install --classic skype

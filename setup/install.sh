@@ -25,14 +25,16 @@ apt install virtualbox
 #apt install xtitle
 
 
-sudo snap install cheese
 sudo snap install --classic chromium
-sudo snap install gimp
 sudo snap install --classic kate
-sudo snap install nmap
 sudo snap install --classic skype
 
+sudo snap install cheese
 sudo snap install filelight  # Like Disk Space Fan
+sudo snap install gimp
+sudo snap install nmap
+sudo snap install threat-dragon
+
 
 # VS Code
 sudo snap install --classic code

@@ -1,0 +1,9 @@
+#!/bin/bash
+# Turns epoch time to human readable date.
+
+if [ -z "$1" ]; then
+    echo "Turns epoch time to human readable date."
+    echo "    example usage: date-epoch 1738931160"
+    exit 1
+fi
+TZ=UTC date -d @$1

@@ -14,6 +14,8 @@ PercentageAction=5
 # Make sure the key doens't conflict with existing ones!
 # From https://askubuntu.com/questions/597395/how-to-set-custom-keyboard-shortcuts-from-terminal
 dconf list /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
-dconf set /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name "Toggle touchpad"
-dconf set /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command toggle_touchpad_gsettings.py
-dconf set /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "<Super>space"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name "Toggle touchpad"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command toggle_touchpad_gsettings.py
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "<Super>space"
+
+dconf write /org/gnome/desktop/input-sources/xkb-options "['compose:ralt']"

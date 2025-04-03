@@ -11,6 +11,7 @@ git config --global user.email "userid@example.com"
 
 git config --global gpg.format ssh
 git config --global user.signingkey ~/.ssh/KEY.PUB
+git config --global commit.gpgsign true
 
 git config --global init.defaultBranch main
 git config --global push.default simple

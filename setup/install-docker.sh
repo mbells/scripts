@@ -5,6 +5,7 @@
 # Docker with apt:
 sudo apt install docker.io
 sudo apt install docker-compose-v2
+sudo apt install docker-buildx
 
 # Update groups for current user:
 sudo addgroup --system docker
@@ -22,3 +23,6 @@ sudo snap enable docker
 # Test:
 #service docker start  # part of main docs, needed for snap?
 docker run hello-world
+
+# Other tooling
+docker pull docker.io/wagoodman/dive

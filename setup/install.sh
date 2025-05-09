@@ -96,3 +96,6 @@ apt install python3-pytest
 # UGS (Universal G-Code Sender)
 apt install default-jre
 
+# ---- Rust
+sudo apt install rustup
+rustup default stable

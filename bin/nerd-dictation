@@ -1,0 +1,26 @@
+#!/bin/bash
+
+cd ~/devel/nerd-dictation
+source .venv/bin/activate
+
+if [[ "$1" == "begin" || "$1" == "end" ]]; then
+    ./nerd-dictation $1 --simulate-input-tool YDOTOOL
+else
+    echo "nerd-dictation <begin|end>"
+    exit 1
+fi
+
+
+
+
+exit 0
+if [[ "$1" == "resume" || "$1" == "suspend" ]]; then
+    ./nerd-dictation $1
+elif [[ "$1" == "start" ]]; then
+    ./nerd-dictation --suspend-on-start
+elif [[ "$1" == "end" ]]; then
+    ./nerd-dictation end
+else
+    echo "nerd-dictation <resume|suspend|start>"
+    exit 1
+fi

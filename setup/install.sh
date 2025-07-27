@@ -20,6 +20,7 @@ sudo apt install ncdu
 apt install net-tools
 apt install nmap
 apt install octave
+sudo apt install pipx
 apt install ubuntu-restricted-extras
 apt install virtualbox
 #apt install wine

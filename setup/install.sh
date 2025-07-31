@@ -16,6 +16,7 @@ sudo apt install inotify-tools
 apt install libavcodec-extra
 sudo apt install librecad
 sudo apt install meld
+sudo apt install ncdu
 apt install net-tools
 apt install nmap
 apt install octave

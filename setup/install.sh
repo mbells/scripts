@@ -41,8 +41,9 @@ sudo snap install vlc
 
 # VS Code
 sudo snap install --classic code
-ln -sf $HOME/devel/scripts/config/vscode-settings.json ~/.config/Code/User/settings.json
-ln -sf $HOME/devel/scripts/config/vscode-keybindings.json ~/.config/Code/User/keybindings.json
+ln -sf ~/devel/scripts/config/vscode/settings.json ~/.config/Code/User/settings.json
+ln -sf ~/devel/scripts/config/vscode/keybindings.json ~/.config/Code/User/keybindings.json
+ln -sf ~/devel/scripts/config/vscode/prompts ~/.config/Code/User/prompts
 
 # Wireshark
 # Details: https://askubuntu.com/questions/700712/how-to-install-wireshark

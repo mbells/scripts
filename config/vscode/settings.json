@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "onWindowChange",
+    "explorer.confirmDragAndDrop": false,
+    "github.copilot.chat.alternateGptPrompt.enabled": true,
+    "chat.toolListTool.enabled": true
+}

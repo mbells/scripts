@@ -34,6 +34,7 @@ sudo snap install --classic skype
 sudo snap install cheese
 sudo snap install filelight  # Like Disk Space Fan
 sudo snap install gimp
+sudo snap install irfanview
 sudo snap install nmap
 sudo snap install ssh-audit  # https://github.com/jtesta/ssh-audit
 sudo snap install testssl    # https://testssl.sh/

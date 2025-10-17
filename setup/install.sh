@@ -102,5 +102,6 @@ apt install python3-pytest
 apt install default-jre
 
 # ---- Rust
+sudo apt install build-essential
 sudo apt install rustup
 rustup default stable

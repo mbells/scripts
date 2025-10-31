@@ -88,18 +88,36 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# ---- Set the tab title
+
+get_title() {
+    if [ "$TITLE" ]; then
+        echo "${TITLE}"
+    elif [ "$SSH_CONNECTION" ]; then
+        echo "${PS_ENV}\u@\h: $(parse_git_root)"
+    else
+        echo "${PS_ENV}$(parse_git_root)"
+    fi
+}
+
+function set-title() {
+    TITLE="$*"
+}
+
+function unset-title() {
+    TITLE=""
+}
+
 # If this is an xterm set the title
 case "$TERM" in
 xterm*|rxvt*)
-    if [ "$SSH_CONNECTION" ]; then
-        PS1="\[\e]0;${PS_ENV}\u@\h: $(parse_git_root)\a\]$PS1"
-    else
-        PS1='\[\e]0;${PS_ENV}$(parse_git_root)\a\]'"$PS1"
-    fi
+    PS1='\[\e]0;$(get_title)\a\]'"$PS1"
     ;;
 *)
     ;;
 esac
+
+
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

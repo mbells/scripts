@@ -9,7 +9,7 @@ function link_in {
     	    echo $2 backing up
     	    cp $3 $3.orig
         else
-            echo $2 original does no exist
+            echo $2 original does not exist
             touch $3.orig
     	fi
     else
@@ -23,6 +23,7 @@ link_in ~/devel/scripts/config bash_aliases ~/.bash_aliases
 link_in ~/devel/scripts/config bashrc ~/.bashrc
 link_in ~/devel/scripts/config inputrc ~/.inputrc
 link_in ~/devel/scripts/config profile ~/.profile
+link_in ~/devel/scripts/config cargo_env ~/.cargo/env
 
 if [ ! -L ~/bin ]; then
     echo Linking bin

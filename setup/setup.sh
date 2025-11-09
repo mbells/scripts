@@ -2,18 +2,21 @@
 # Setup 
 
 function link_in {
-    # Make one copy of the original target file,
-    # or note that it did not exist by registering an empty file.
-    if [ ! -f $3.orig ]; then
-    	if [ -f $3 ]; then
-    	    echo $2 backing up
-    	    cp $3 $3.orig
+    # Only backup target if not already a link
+    if [ ! -L $3 ]; then
+        # Make one copy of the original target file,
+        # or note that it did not exist by registering an empty file.
+        if [ ! -f $3.orig ]; then
+            if [ -f $3 ]; then
+                echo $2 backing up
+                cp $3 $3.orig
+            else
+                echo $2 original does not exist
+                touch $3.orig
+            fi
         else
-            echo $2 original does not exist
-            touch $3.orig
-    	fi
-    else
-        echo $2 already backed up
+            echo $2 already backed up
+        fi
     fi
     
     ln -sf $1/$2 $3
@@ -32,3 +35,13 @@ else
     echo bin already linked 
 fi
 
+if [ -d ~/Templates ]; then
+    echo Moving original Templates
+    mv ~/Templates ~/Templates.orig
+    ln -s ~/devel/scripts/config/Templates ~/Templates
+elif [ ! -L ~/Templates ]; then
+    echo Linking Templates
+    ln -s ~/devel/scripts/config/Templates ~/Templates
+else
+    echo Templates already linked
+fi

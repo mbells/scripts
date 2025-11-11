@@ -10,7 +10,10 @@ NAME      TYPE SIZE USED PRIO
 
 2. Extend the swap file:
 ```
+sudo swapoff /swap.img
 sudo fallocate -l 30G /swap.img
+sudo mkswap /swap.img
+sudo swapon /swap.img
 ```
 
 Full instructions if one doesn't already exist:

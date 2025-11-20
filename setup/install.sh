@@ -17,15 +17,17 @@ apt install libavcodec-extra
 sudo apt install librecad
 sudo apt install meld
 sudo apt install ncdu
-apt install net-tools
-apt install nmap
-apt install octave
+sudo apt install net-tools
+sudo apt install nmap
+sudo apt install pdftk-java
 sudo apt install pipx
 apt install ubuntu-restricted-extras
 apt install virtualbox
-#apt install wine
-#apt install xtitle
 
+#apt install wine
+
+
+#apt install octave
 
 sudo snap install --classic chromium
 sudo snap install --classic kate

@@ -7,6 +7,9 @@ sudo apt install docker.io
 sudo apt install docker-compose-v2
 sudo apt install docker-buildx
 
+sudo systemctl enable docker
+sudo systemctl start docker
+
 # Update groups for current user:
 sudo addgroup --system docker
 sudo adduser $USER docker
@@ -21,8 +24,10 @@ sudo snap disable docker
 sudo snap enable docker
 
 # Test:
-#service docker start  # part of main docs, needed for snap?
+sudo systemctl status docker
 docker run hello-world
 
 # Other tooling
+
+# Tool for exploring a docker image and layer contents.
 docker pull docker.io/wagoodman/dive

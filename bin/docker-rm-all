@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 # Removes all Docker stuff
 # Based on https://gist.github.com/beeman/aca41f3ebd2bf5efbd9d7fef09eac54d
 

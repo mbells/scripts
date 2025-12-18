@@ -5,5 +5,7 @@
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "github.copilot.chat.alternateGptPrompt.enabled": true
+    "github.copilot.chat.alternateGptPrompt.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "python.analysis.typeCheckingMode": "standard"
 }

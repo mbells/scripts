@@ -1,0 +1,5 @@
+#!/bin/bash
+# Mounts VirtualBox VM host folder
+# Prior to this, go into VirtualBox settings and create a shared folder named "shared".
+
+sudo mount -t vboxsf -o uid=$UID shared ~/host

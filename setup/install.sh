@@ -107,3 +107,13 @@ apt install default-jre
 sudo apt install build-essential
 sudo apt install rustup
 rustup default stable
+
+# Balena Etcher
+# Just use "Startup Disk Creator"
+
+#curl -1sLf 'https://dl.cloudsmith.io/public/balena/etcher/setup.deb.sh' | sudo -E bash
+#sudo apt update
+#sudo apt install balena-etcher-electron
+
+# Transmission torrent client
+sudo apt-get install transmission-cli transmission-common transmission-daemon

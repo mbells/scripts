@@ -1,0 +1,16 @@
+
+How to setup server:
+
+```
+sudo apt install openssh-server
+
+sudo ufw allow ssh
+sudo ufw enable
+sudo systemctl enable ssh
+```
+
+Query:
+```
+sudo systemctl status ssh
+sudo ufw status
+```

@@ -1,3 +1,12 @@
+Removing old and reinstalling:
+```
+sudo apt purge '^nvidia.*' dkms
+sudo apt install nvidia-driver-580 dkms
+sudo update-initramfs -u
+sudo update-grub
+sudo reboot
+```
+
 
 Configure the production repository:
 
@@ -13,7 +22,7 @@ Install the toolkit:
 ```
 sudo apt-get update
 
-export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.0-1
+export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.18.2-1
 sudo apt-get install -y \
       nvidia-container-toolkit=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
       nvidia-container-toolkit-base=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \

@@ -3,6 +3,7 @@ uname -r
 
 # List all installed:
 dpkg --list | grep linux-image
+dpkg --list | grep linux-headers
 
 # Remove modules, e.g.:
 sudo apt purge linux-image-4.4.0-81-generic

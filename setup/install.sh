@@ -6,42 +6,38 @@ apt install vlc browser-plugin-vlc
 #apt install cmake
 apt install cups-pdf
 sudo apt install curl
-apt install easystroke
+#apt install easystroke
 sudo apt install glogg  # Syslog viewing tool, see http://glogg.bonnefon.org/
-sudo apt install google-perftools
-apt install gparted
+sudo apt install gparted
 apt install inkscape
 sudo apt install inotify-tools
 #apt install libav-tools
 apt install libavcodec-extra
-sudo apt install librecad
 sudo apt install meld
 sudo apt install ncdu
 sudo apt install net-tools
-sudo apt install nmap
-sudo apt install pdftk-java
+#sudo apt install pdftk-java
 sudo apt install pipx
 apt install ubuntu-restricted-extras
 apt install virtualbox
 
 #apt install wine
 
-
-#apt install octave
-
 sudo snap install --classic chromium
 sudo snap install --classic kate
-sudo snap install --classic skype
 
 sudo snap install cheese
 sudo snap install filelight  # Like Disk Space Fan
 sudo snap install gimp
 sudo snap install irfanview
-sudo snap install nmap
-sudo snap install ssh-audit  # https://github.com/jtesta/ssh-audit
-sudo snap install testssl    # https://testssl.sh/
-sudo snap install threat-dragon
+sudo snap install speedtest
 sudo snap install vlc
+
+# ---- Software development
+
+sudo apt install google-perftools
+
+#apt install octave
 
 # VS Code
 sudo snap install --classic code
@@ -49,14 +45,24 @@ ln -sf ~/devel/scripts/config/vscode/settings.json ~/.config/Code/User/settings.
 ln -sf ~/devel/scripts/config/vscode/keybindings.json ~/.config/Code/User/keybindings.json
 ln -sf ~/devel/scripts/config/vscode/prompts ~/.config/Code/User/prompts
 
+
+# ---- Security
+
+#sudo apt install nmap
+
+sudo snap install nmap
+sudo snap install ssh-audit  # https://github.com/jtesta/ssh-audit
+sudo snap install testssl    # https://testssl.sh/
+sudo snap install threat-dragon
+
 # Wireshark
 # Details: https://askubuntu.com/questions/700712/how-to-install-wireshark
 sudo apt install wireshark
 
 # GNOME
-apt install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0
-apt install gnome-system-monitor
-apt install gnome-tweak-tool
+#apt install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0
+#apt install gnome-system-monitor
+#apt install gnome-tweak-tool
 
 
 # Arduino - must download for recent version
@@ -73,11 +79,14 @@ apt install python3-opencv
 apt install vagrant
 vagrant plugin install vagrant-vbguest
 
+# ---- Maker
+
+sudo apt install librecad
+
 # OpenSCAD
-#add-apt-repository ppa:openscad/releases
-#apt update
-#apt install openscad
 sudo snap install openscad
+
+# ---- AI and ML
 
 # libdvdcss
 #deb http://download.videolan.org/pub/debian/stable/ /

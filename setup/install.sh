@@ -18,6 +18,7 @@ sudo apt install ncdu
 sudo apt install net-tools
 #sudo apt install pdftk-java
 sudo apt install pipx
+sudo apt install swapspace
 apt install ubuntu-restricted-extras
 apt install virtualbox
 

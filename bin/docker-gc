@@ -1,0 +1,4 @@
+#!/bin/bash
+docker system df
+
+docker system prune

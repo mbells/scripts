@@ -9,6 +9,7 @@ sudo apt install curl
 #apt install easystroke
 sudo apt install glogg  # Syslog viewing tool, see http://glogg.bonnefon.org/
 sudo apt install gparted
+sudo apt install imagemagick-6.q16
 apt install inkscape
 sudo apt install inotify-tools
 #apt install libav-tools

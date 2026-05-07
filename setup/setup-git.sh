@@ -5,6 +5,9 @@
 sudo apt install git-lfs
 sudo apt install gitk
 
+# GitHub CLI
+sudo snap install gh
+
 # Setup
 git config --global user.name "YOUR NAME"
 git config --global user.email "userid@example.com"

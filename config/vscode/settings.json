@@ -8,5 +8,6 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "python.analysis.typeCheckingMode": "standard",
     "terminal.integrated.lineHeight": 1.15,
-    "editor.renderWhitespace": "trailing"
+    "editor.renderWhitespace": "trailing",
+    "python.terminal.useEnvFile": true
 }

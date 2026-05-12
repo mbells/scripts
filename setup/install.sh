@@ -7,6 +7,7 @@ apt install vlc browser-plugin-vlc
 apt install cups-pdf
 sudo apt install curl
 #apt install easystroke
+sudo apt install gcc
 sudo apt install glogg  # Syslog viewing tool, see http://glogg.bonnefon.org/
 sudo apt install gparted
 sudo apt install imagemagick-6.q16

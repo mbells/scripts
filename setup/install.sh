@@ -13,6 +13,7 @@ sudo apt install gparted
 sudo apt install imagemagick-6.q16
 apt install inkscape
 sudo apt install inotify-tools
+sudo apt install kate
 #apt install libav-tools
 apt install libavcodec-extra
 sudo apt install meld
@@ -20,6 +21,7 @@ sudo apt install ncdu
 sudo apt install net-tools
 #sudo apt install pdftk-java
 sudo apt install pipx
+sudo apt install podman
 sudo apt install swapspace
 apt install ubuntu-restricted-extras
 apt install virtualbox
@@ -27,7 +29,6 @@ apt install virtualbox
 #apt install wine
 
 sudo snap install --classic chromium
-sudo snap install --classic kate
 
 sudo snap install cheese
 sudo snap install filelight  # Like Disk Space Fan

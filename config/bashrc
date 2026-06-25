@@ -164,3 +164,13 @@ if ! shopt -oq posix; then
 fi
 
 . "$HOME/.cargo/env"
+
+# Added by Copilot setup
+export PATH="$HOME/.local/bin:$PATH"
+
+# Added by Copilot setup
+export PATH="$HOME/.copilot/bin:$PATH"
+
+if [ -f "$HOME/devel/scripts-work/config/bashrc_additions" ]; then
+    source $HOME/devel/scripts-work/config/bashrc_additions
+fi
